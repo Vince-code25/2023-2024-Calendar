@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Calendar 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="calendar-header">
+            <h1>Philippine Calendar 2023-2024</h1>
+            <div class="month-navigation">
+                <button id="prevMonth" class="nav-btn">&lt;</button>
+                <span id="monthYear" class="month-title">January 2023</span>
+                <button id="nextMonth" class="nav-btn">&gt;</button>
+            </div>
+        </header>
+
+        <div class="calendar-wrapper">
+            <div class="calendar">
+                <div class="calendar-grid">
+                    <div class="week-header">
+                        <div class="week-number-header">Week</div>
+                        <div class="day-header">Sun</div>
+                        <div class="day-header">Mon</div>
+                        <div class="day-header">Tue</div>
+                        <div class="day-header">Wed</div>
+                        <div class="day-header">Thu</div>
+                        <div class="day-header">Fri</div>
+                        <div class="day-header">Sat</div>
+                    </div>
+                    <div id="calendar-body" class="calendar-body">
+                        <!-- Calendar days will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color holiday"></div>
+                <span>Philippine Holidays</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color today"></div>
+                <span>Today</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Holiday Modal -->
+    <div id="holidayModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="" class="holiday-image">
+                <div id="modalDescription" class="holiday-description"></div>
+                <div id="modalDate" class="holiday-date"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
